@@ -2,5 +2,5 @@
 echo Parent pid is $$
 sleep 15 &
 echo Child pid is $!
-ps | grep -e "$$\|PPID"
+ps -f | grep -e "$$\|PPID" | grep -v grep
 exec ./parent_test

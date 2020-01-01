@@ -1,5 +1,6 @@
 #! /bin/bash
 ./parent_test.sh &
-sleep 5
+sleep 2
 echo "Parent PID is $!"
-ps | grep -e "$!\|PPID"
+ps -f | grep -e "$!\|PPID" | grep -v grep
+wait
