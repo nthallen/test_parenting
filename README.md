@@ -1,5 +1,12 @@
 # test_parenting
 ## Test program to explore effects of exec on parent/child relationships under cygwin
+
+## Fixed
+
+**Note:** This problem has been fixed in version 3.1.2 of the cygwin package.
+
+## Running
+
 To run this test program:
 - make parent_test
 - ./parent_test2.sh
